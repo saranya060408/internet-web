@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sakthi Internet Service — Ultra High-Speed Fiber Broadband</title>
+  <meta name="description" content="Sakthi Internet Service — Next-Gen Fiber Broadband from 50 Mbps to 300 Mbps with unlimited data, OTT bundles, 24/7 support, and instant activation." />
+  <meta name="keywords" content="ISP, broadband, fiber, internet plans, Sakthi Internet Service, BSNL, TIC Fiber, high speed internet, Tamil Nadu ISP" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sakthi Internet Service — Ultra High-Speed Fiber Broadband" />
+  <meta property="og:description" content="Experience blazing fast fiber broadband from 50 Mbps to 300 Mbps. Unlimited data, OTT entertainment, and gaming-grade low ping." />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Preconnect Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <style>
+    /* Critical preloader */
+    .preloader {
+      position: fixed; inset: 0; background: #080810; z-index: 9999;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+    .preloader.gone { opacity: 0; visibility: hidden; }
+    .preloader-logo-wrap {
+      display: flex; flex-direction: column; align-items: center; gap: 14px; margin-bottom: 24px;
+    }
+    .preloader-icon-svg {
+      width: 64px; height: 64px; animation: preloaderPulse 1.8s infinite ease-in-out;
+      filter: drop-shadow(0 0 20px rgba(255, 140, 0, 0.75));
+    }
+    @keyframes preloaderPulse {
+      0%, 100% { transform: scale(1); filter: drop-shadow(0 0 16px rgba(255, 140, 0, 0.65)); }
+      50% { transform: scale(1.08); filter: drop-shadow(0 0 28px rgba(59, 130, 246, 0.9)); }
+    }
+    .preloader-logo {
+      font-family: 'Orbitron', monospace; font-size: clamp(1.3rem, 4vw, 2.2rem); font-weight: 900;
+      background: linear-gradient(135deg, #ff8c00 0%, #ffb300 50%, #3b82f6 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+      text-align: center; letter-spacing: 2px;
+    }
+    .preloader-bar {
+      width: min(240px, 65vw); height: 4px; background: rgba(255,255,255,0.08); border-radius: 4px; overflow: hidden;
+      box-shadow: 0 0 10px rgba(255,140,0,0.25);
+    }
+    .preloader-fill {
+      height: 100%; width: 0; background: linear-gradient(90deg, #ff8c00, #ffb300, #3b82f6);
+      border-radius: 4px; transition: width 1.1s cubic-bezier(0.4,0,0.2,1);
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════
+     PRELOADER
+═══════════════════════════════════════════════════════════ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader-logo-wrap">
+    <svg class="preloader-icon-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="50" cy="50" r="42" stroke="url(#preloaderGrad)" stroke-width="3" stroke-dasharray="8 6" opacity="0.6"/>
+      <circle cx="50" cy="50" r="30" stroke="#ff8c00" stroke-width="2.5" opacity="0.85"/>
+      <path d="M26 64 C 32 46, 68 46, 74 64" stroke="url(#preloaderGrad2)" stroke-width="4" stroke-linecap="round"/>
+      <path d="M34 68 C 39 55, 61 55, 66 68" stroke="#ff8c00" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M42 72 C 45 64, 55 64, 58 72" stroke="#3b82f6" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="50" cy="76" r="4" fill="#ff8c00"/>
+      <path d="M50 20 L50 48 M42 32 L50 20 L58 32" stroke="#ff8c00" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <defs>
+        <linearGradient id="preloaderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#ff8c00"/>
+          <stop offset="100%" stop-color="#3b82f6"/>
+        </linearGradient>
+        <linearGradient id="preloaderGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#ff8c00"/>
+          <stop offset="50%" stop-color="#ffb300"/>
+          <stop offset="100%" stop-color="#3b82f6"/>
+        </linearGradient>
+      </defs>
+    </svg>
+    <div class="preloader-logo">SAKTHI FIBER</div>
+  </div>
+  <div class="preloader-bar"><div class="preloader-fill" id="preloader-fill"></div></div>
+  <p style="color:#8b949e;font-size:0.78rem;margin-top:14px;letter-spacing:3px;text-transform:uppercase;font-family:'Orbitron',sans-serif;">
+    Connecting Quantum Fiber...
+  </p>
+</div>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const fill = document.getElementById('preloader-fill');
+    if (fill) setTimeout(() => { fill.style.width = '100%'; }, 100);
+    setTimeout(() => {
+      const pl = document.getElementById('preloader');
+      if (pl) pl.classList.add('gone');
+      setTimeout(() => pl && pl.remove(), 600);
+    }, 1100);
+  });
+</script>
+
+<!-- ═══════════════════════════════════════════════════════════
+     3D VIDEO & PROCEDURAL BACKGROUND
+═══════════════════════════════════════════════════════════ -->
+<div id="video-bg-wrap" aria-hidden="true">
+  <!-- Dynamic 3D Cyber Fiber & Router Video Background -->
+  <video
+    id="bg-video"
+    autoplay
+    muted
+    loop
+    playsinline
+    disablepictureinpicture
+    preload="auto"
+    aria-hidden="true"
+  >
+    <!-- High-res 3D router & cyber fiber optic loop stream -->
+    <source id="bg-video-source" src="Router_rotating_with_data_streams_202608051945.mp4" type="video/mp4" />
+    <source src="WiFi_router_opening_and_glowing_202608051937.mp4" type="video/mp4" />
+  </video>
+  <!-- Cyber overlay with adjustable holographic ambient gradient -->
+  <div id="video-overlay"></div>
+</div>
+
+<!-- 3D Interactive Cyber Network Canvas -->
+<canvas id="network-canvas" aria-hidden="true"></canvas>
+
+<!-- ═══════════════════════════════════════════════════════════
+     HEADER
+═══════════════════════════════════════════════════════════ -->
+<header id="site-header" role="banner">
+  <div class="header-inner">
+
+    <!-- Custom Internet SVG Logo -->
+    <a href="#" class="logo-wrap" aria-label="Sakthi Internet Service Home">
+      <div class="logo-icon-container" aria-hidden="true">
+        <svg class="internet-logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Outer orbital fiber ring -->
+          <circle cx="50" cy="50" r="44" stroke="url(#logoGlow)" stroke-width="2.5" stroke-dasharray="10 8" opacity="0.75" class="svg-spin"/>
+          <!-- Intermediate quantum signal ring -->
+          <circle cx="50" cy="50" r="32" stroke="#ff8c00" stroke-width="1.8" opacity="0.9"/>
+          <!-- Wi-Fi 6 & Broadband Radiation Waves -->
+          <path d="M24 62 C 32 44, 68 44, 76 62" stroke="url(#logoWave)" stroke-width="4.5" stroke-linecap="round"/>
+          <path d="M33 67 C 39 53, 61 53, 67 67" stroke="#ff8c00" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M42 72 C 45 63, 55 63, 58 72" stroke="#3b82f6" stroke-width="3" stroke-linecap="round"/>
+          <!-- Fiber Core Node -->
+          <circle cx="50" cy="76" r="4.5" fill="#ff8c00" class="svg-node-pulse"/>
+          <!-- High Speed Optical Data Arrow / Up-Down Beams -->
+          <path d="M50 16 L50 46 M40 28 L50 16 L60 28" stroke="#ff8c00" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs>
+            <linearGradient id="logoGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#ff8c00"/>
+              <stop offset="50%" stop-color="#ffb300"/>
+              <stop offset="100%" stop-color="#3b82f6"/>
+            </linearGradient>
+            <linearGradient id="logoWave" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#ff8c00"/>
+              <stop offset="50%" stop-color="#ffb300"/>
+              <stop offset="100%" stop-color="#3b82f6"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <span class="logo-name font-orbitron">SAKTHI <span class="text-gradient-cyan">FIBER</span></span>
+        <span class="logo-tagline">⚡ Ultra High-Speed Broadband</span>
+      </div>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="main-nav" id="main-nav" role="navigation" aria-label="Main navigation">
+      <a href="#hero"          class="nav-link">Home</a>
+      <a href="#speedtest-section" class="nav-link"><span class="nav-hot-badge">LIVE</span> Speed Test</a>
+      <a href="#plans-section" class="nav-link">Plans</a>
+      <a href="#calculator"    class="nav-link">Calculator</a>
+      <a href="#wizard"        class="nav-link">Smart Finder</a>
+      <a href="#comparison"    class="nav-link">Compare</a>
+      <a href="#features"      class="nav-link">Features</a>
+    </nav>
+
+    <!-- Right cluster -->
+    <div class="header-right">
+      <a href="tel:9865396073" class="nav-btn-highlight" id="btn-quick-book" aria-label="Quick Connect via Phone Call">
+        <span>⚡ Quick Connect (9865396073)</span>
+      </a>
+      <a href="tel:9865396073" class="nav-btn" aria-label="Call Now">
+        📞 <span class="call-number">Call Us</span>
+      </a>
+      <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu" aria-expanded="false">
+        <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════════════════
+     HERO SECTION
+═══════════════════════════════════════════════════════════ -->
+<section id="hero" aria-label="Hero — Sakthi Internet Service">
+  <!-- Aurora Depth Orbs (cinematic background effect) -->
+  <div class="hero-aurora-orb aurora-orb-1" aria-hidden="true"></div>
+  <div class="hero-aurora-orb aurora-orb-2" aria-hidden="true"></div>
+  <div class="hero-aurora-orb aurora-orb-3" aria-hidden="true"></div>
+
+  <div class="hero-bg-grid" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <!-- Left Copy -->
+    <div class="hero-copy">
+      <div class="hero-badge-glow" aria-label="Announcement">
+        <span class="pulse-beacon"></span>
+        <span class="badge-text font-orbitron">NEXT-GEN BROADBAND 3.0</span>
+        <span class="badge-sub">Multi-Gigabit Fiber Core</span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="line1">Light-Speed Fiber</span>
+        <span class="line2 text-gradient-aurora">Broadband Without Limits</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Empower your home &amp; business with symmetrical fiber broadband from <strong class="text-cyan-glow">50 Mbps to 300 Mbps</strong>.
+        Zero buffering, ultra-low ping for gaming, 4K OTT entertainment, and 99.98% uptime guaranteed.
+      </p>
+
+      <!-- Tamil High-Impact Callout Banner -->
+      <div class="tamil-banner-cyber" role="complementary" aria-label="Tamil language announcement">
+        <p class="tamil-text-main">எப்போழுதும் இணைந்திருங்கள் எங்களின் நவீன ஃபைபர் நெட்வொர்க் வழியாக</p>
+        <p class="tamil-text-sub">உங்களின் தேவைக்கேற்ற அதிவிரைவான பிராட்பேண்ட் கனெக்ஷன் இப்போழுது நீங்கள் விரும்பும் விலையில்</p>
+        <div class="tamil-price-flex">
+          <span class="price-highlight font-orbitron">Starting @ ₹449/-*</span>
+          <span class="tamil-perk-badge">FREE Dual-Band Router</span>
+          <span class="tamil-perk-badge">Unlimited OTT</span>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="hero-stats" role="list" aria-label="Key statistics">
+        <div class="stat-item" role="listitem">
+          <span class="stat-num font-orbitron" data-target="300" data-suffix=" Mbps" id="stat-speed">300 Mbps</span>
+          <span class="stat-label">Max Speed Tier</span>
+        </div>
+        <div class="stat-item" role="listitem">
+          <span class="stat-num font-orbitron" id="stat-ping-hero">&lt; 4 ms</span>
+          <span class="stat-label">Ultra-Low Gaming Ping</span>
+        </div>
+        <div class="stat-item" role="listitem">
+          <span class="stat-num font-orbitron" data-target="7" data-suffix=" Major ISPs" id="stat-providers">7 Major ISPs</span>
+          <span class="stat-label">Aggregated Networks</span>
+        </div>
+      </div>
+
+      <!-- Actions -->
+      <div class="hero-actions">
+        <a href="tel:9865396073" class="btn-primary-glow" id="btn-hero-connect" aria-label="Get instant connection">
+          <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          Get Connected Now
+        </a>
+        <a href="#speedtest-section" class="btn-secondary-glow" aria-label="Run live speed test">
+          <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          Run Live Speed Test
+        </a>
+        <a href="#plans-section" class="btn-ghost-cyber" aria-label="Browse all plans">
+          Explore Plans →
+        </a>
+      </div>
+    </div>
+
+    <!-- Right Visual — Interactive Cyber Holographic Speedometer & Telemetry Card -->
+    <div class="hero-visual" aria-hidden="false">
+      <div class="hologram-card">
+        <div class="hologram-glow-border"></div>
+        <div class="hologram-header" style="justify-content: flex-end;">
+          <span class="hologram-protocol">10G GPON READY</span>
+        </div>
+
+        <div class="speed-gauge-visual">
+          <div class="orbit-ring orbit-1"><div class="orbit-dot orbit-dot-c"></div></div>
+          <div class="orbit-ring orbit-2"><div class="orbit-dot orbit-dot-p" style="top:auto;bottom:-5px;"></div></div>
+
+          <div class="hero-speedometer" id="hero-speed-display-wrap">
+            <div class="speedometer-inner">
+              <span class="speed-prefix font-orbitron">PEAK SPEED</span>
+              <div class="speed-readout font-orbitron" id="hero-speed-val">300</div>
+              <div class="speed-unit font-orbitron">Mbps</div>
+              <div class="speed-status-pill">
+                <span class="status-icon">🚀</span> ZERO PACKET LOSS
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Telemetry indicators -->
+        <div class="telemetry-grid">
+          <div class="telemetry-node">
+            <span class="node-label">Latency / Ping</span>
+            <span class="node-val font-orbitron text-cyan">3.8 ms</span>
+          </div>
+          <div class="telemetry-node">
+            <span class="node-label">Jitter</span>
+            <span class="node-val font-orbitron text-green">0.4 ms</span>
+          </div>
+          <div class="telemetry-node">
+            <span class="node-label">Uptime SLA</span>
+            <span class="node-val font-orbitron text-gold">99.98%</span>
+          </div>
+          <div class="telemetry-node">
+            <span class="node-label">Optical Power</span>
+            <span class="node-val font-orbitron text-purple">-18 dBm (Optimal)</span>
+          </div>
+        </div>
+
+        <div class="hologram-footer">
+          <button class="btn-run-embedded-test" id="btn-quick-speedtest-hero">
+            ⚡ Run Interactive Speed Test Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SPEED TEST CHECK SECTION
+═══════════════════════════════════════════════════════════ -->
+<section id="speedtest-section" aria-labelledby="speedtest-heading">
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-label">⚡ Live Broadband Check</span>
+      <h2 class="section-title" id="speedtest-heading">
+        Speed Test <span class="neon-text-cyan">Check</span>
+      </h2>
+      <p class="section-desc">
+        Check your real-time broadband download speed, upload bandwidth, and latency on the official Ookla Speedtest network.
+      </p>
+    </div>
+
+    <!-- Clean Speed Test Check Card with GO Button -->
+    <div class="speedtest-check-card glass">
+      <!-- Speed Test Check Tab -->
+      <div class="speedtest-tab-header">
+        <div class="speedtest-tab-pill">
+          <span class="pulse-beacon"></span>
+          <span class="tab-pill-title">Speed Test Check</span>
+        </div>
+      </div>
+
+      <!-- Prominent GO Button -->
+      <div class="speedtest-go-stage">
+        <a href="https://www.speedtest.net/" target="_blank" rel="noopener noreferrer" class="btn-speedtest-go font-orbitron" id="btn-speedtest-go" aria-label="Start Speed Test on Speedtest.net">
+          <span class="go-text">GO</span>
+          <span class="go-glow-pulse"></span>
+          <span class="go-glow-ring"></span>
+        </a>
+      </div>
+
+      <!-- Quick Server Info & Details -->
+      <div class="speedtest-meta-strip glass-sub">
+        <div class="meta-strip-item">
+          <span class="meta-strip-icon">📡</span>
+          <span class="meta-strip-text">Official Ookla Speedtest® Edge Servers</span>
+        </div>
+        <div class="meta-strip-item">
+          <span class="meta-strip-icon">⚡</span>
+          <span class="meta-strip-text">Real Download, Upload &amp; Ping Latency</span>
+        </div>
+      </div>
+
+      <div class="speedtest-launch-prompt">
+        <a href="https://www.speedtest.net/" target="_blank" rel="noopener noreferrer" class="speedtest-direct-link">
+          <span>Click GO or open <strong>Speedtest.net</strong> to run your test ↗</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Animated Section Divider -->
+<div class="section-divider" aria-hidden="true"></div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     PLANS SECTION
+═══════════════════════════════════════════════════════════ -->
+<section id="plans-section" aria-labelledby="plans-heading">
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-label">📡 Fiber Broadband Catalog</span>
+      <h2 class="section-title" id="plans-heading">
+        Choose Your <span class="neon-text-purple">Perfect Plan</span>
+      </h2>
+      <p class="section-desc">
+        True symmetrical speeds, unlimited bandwidth with zero speed throttling, and complimentary OTT entertainment bundles.
+      </p>
+    </div>
+
+    <!-- Duration Tabs & GST Switcher Bar -->
+    <div class="plans-control-strip">
+      <!-- Duration Tabs -->
+      <div class="tabs-container" role="tablist" aria-label="Plan duration selector">
+        <div class="tabs-wrap">
+          <button class="tab-btn active" data-duration="monthly"   role="tab" aria-selected="true"  id="tab-monthly"   aria-controls="plans-grid">Monthly</button>
+          <button class="tab-btn"        data-duration="quarterly" role="tab" aria-selected="false" id="tab-quarterly" aria-controls="plans-grid">
+            3 Months <span class="tab-savings-tag">SAVE 10%</span>
+          </button>
+          <button class="tab-btn"        data-duration="annual"    role="tab" aria-selected="false" id="tab-annual"    aria-controls="plans-grid">
+            Annual <span class="tab-savings-tag">SAVE 25%</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- GST Price Toggle -->
+      <div class="gst-toggle-wrapper">
+        <span class="toggle-label" id="label-gst-excl">Base Price</span>
+        <label class="switch" aria-label="Toggle price including 18% GST">
+          <input type="checkbox" id="gst-toggle-input">
+          <span class="slider round"></span>
+        </label>
+        <span class="toggle-label font-bold" id="label-gst-incl">+ 18% GST Final</span>
+      </div>
+    </div>
+
+    <!-- Plans Grid (populated by JS) -->
+    <div class="plans-grid" id="plans-grid" role="tabpanel" aria-labelledby="tab-monthly"></div>
+
+    <!-- GST transparent note -->
+    <div class="gst-notice-card glass-sub">
+      <div class="gst-notice-icon">💡</div>
+      <div class="gst-notice-content">
+        <strong>Transparent Pricing Promise:</strong> Base plans are subject to standard 18% GST as per Government regulations.
+        All plans come with <strong>Free Optical Fiber Installation</strong>, <strong>Dual-Band Wi-Fi 6 Router</strong> on eligible plans, and <strong>24/7 Dedicated Support</strong>.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Animated Section Divider -->
+<div class="section-divider" aria-hidden="true"></div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     INTERACTIVE DOWNLOAD TIME CALCULATOR
+═══════════════════════════════════════════════════════════ -->
+<section id="calculator" aria-labelledby="calc-heading">
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-label">⏱️ Bandwidth Efficiency</span>
+      <h2 class="section-title" id="calc-heading">
+        Instant <span class="neon-text-gold">Download Time</span> Calculator
+      </h2>
+      <p class="section-desc">
+        See how fast your favorite movies, massive AAA game patches, and cloud backups download across our fiber speeds.
+      </p>
+    </div>
+
+    <div class="calculator-card glass">
+      <div class="calc-top-presets">
+        <span class="preset-label">Quick File Presets:</span>
+        <div class="preset-pills">
+          <button class="preset-btn active" data-size="4" data-name="Full HD Movie (4 GB)">🎬 HD Movie (4GB)</button>
+          <button class="preset-btn" data-size="15" data-name="4K Ultra-HD HDR Movie (15 GB)">🍿 4K Movie (15GB)</button>
+          <button class="preset-btn" data-size="60" data-name="AAA Game / GTA V (60 GB)">🎮 AAA Game (60GB)</button>
+          <button class="preset-btn" data-size="120" data-name="Next-Gen 8K Game / Patch (120 GB)">⚡ Next-Gen (120GB)</button>
+        </div>
+      </div>
+
+      <div class="calc-slider-wrap">
+        <div class="slider-header">
+          <span>Custom File Size:</span>
+          <span class="slider-val-display font-orbitron" id="calc-filesize-display">4 GB</span>
+        </div>
+        <input type="range" min="1" max="200" value="4" class="cyber-range-slider" id="calc-filesize-slider" aria-label="Select file size in Gigabytes">
+      </div>
+
+      <!-- Speed Comparison Grid -->
+      <div class="calc-results-grid" id="calc-results-container">
+        <!-- Populated dynamically by JS -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Animated Section Divider -->
+<div class="section-divider" aria-hidden="true"></div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SMART PLAN FINDER WIZARD
+═══════════════════════════════════════════════════════════ -->
+<section id="wizard" aria-labelledby="wizard-heading">
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-label">🧠 Intelligent Matchmaker</span>
+      <h2 class="section-title" id="wizard-heading">
+        Find Your <span class="neon-text-cyan">Ideal Fiber Plan</span>
+      </h2>
+      <p class="section-desc">
+        Answer 3 quick preferences and let our bandwidth engine recommend the highest performance plan tailored to your household.
+      </p>
+    </div>
+
+    <div class="wizard-card glass">
+      <div class="wizard-step-wrap">
+        <!-- Question 1 -->
+        <div class="wizard-question-block">
+          <h3 class="wizard-q-title">1. How many devices &amp; users connect simultaneously?</h3>
+          <div class="wizard-options-grid" data-q="devices">
+            <button class="wizard-opt-btn active" data-val="1-2">
+              <span class="opt-icon">📱</span>
+              <span class="opt-title">1 – 2 Devices</span>
+              <span class="opt-sub">Individual or couple</span>
+            </button>
+            <button class="wizard-opt-btn" data-val="3-5">
+              <span class="opt-icon">🏠</span>
+              <span class="opt-title">3 – 5 Devices</span>
+              <span class="opt-sub">Standard family home</span>
+            </button>
+            <button class="wizard-opt-btn" data-val="6+">
+              <span class="opt-icon">🏢</span>
+              <span class="opt-title">6+ Devices / Smart Home</span>
+              <span class="opt-sub">Heavy streaming &amp; gadgets</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="wizard-question-block">
+          <h3 class="wizard-q-title">2. What is your primary internet activity?</h3>
+          <div class="wizard-options-grid" data-q="activity">
+            <button class="wizard-opt-btn active" data-val="browsing">
+              <span class="opt-icon">🌐</span>
+              <span class="opt-title">Browsing &amp; Social Media</span>
+              <span class="opt-sub">Emails, YouTube, Zoom calls</span>
+            </button>
+            <button class="wizard-opt-btn" data-val="streaming">
+              <span class="opt-icon">📺</span>
+              <span class="opt-title">4K OTT Streaming</span>
+              <span class="opt-sub">Netflix, Prime, Hotstar HDR</span>
+            </button>
+            <button class="wizard-opt-btn" data-val="gaming">
+              <span class="opt-icon">🎮</span>
+              <span class="opt-title">Competitive Gaming &amp; WFH</span>
+              <span class="opt-sub">Zero ping, high uploads, cloud</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recommendation Outcome Banner -->
+      <div class="wizard-recommendation-box glass-sub" id="wizard-recommendation-box">
+        <div class="rec-badge font-orbitron">⭐ RECOMMENDED MATCH FOR YOU</div>
+        <div class="rec-flex">
+          <div class="rec-details">
+            <div class="rec-plan-name font-orbitron" id="rec-plan-name">Value Blaze (100 Mbps)</div>
+            <div class="rec-plan-reason" id="rec-plan-reason">Perfect balance for streaming 4K movies and family browsing across multiple phones &amp; Smart TVs.</div>
+            <div class="rec-plan-price font-orbitron" id="rec-plan-price">₹649 / month <small>+ GST</small></div>
+          </div>
+          <div class="rec-action-wrap">
+            <a href="tel:9865396073" class="btn-primary-glow" id="btn-wizard-book" aria-label="Quick Book This Plan via Phone Call">
+              📞 Quick Book This Plan
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Animated Section Divider -->
+<div class="section-divider" aria-hidden="true"></div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     PROVIDER COMPARISON TABLE
+═══════════════════════════════════════════════════════════ -->
+<section id="comparison" aria-labelledby="comparison-heading">
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-label">🏆 Complete Market Matrix</span>
+      <h2 class="section-title" id="comparison-heading">
+        Compare <span class="neon-text-cyan">All ISP Providers</span> at a Glance
+      </h2>
+      <p class="section-desc">
+        Real-time pricing matrix across all 7 major providers in the region.
+        <span style="color:var(--green);">🏆 Green = Lowest cost per speed tier.</span>
+        &nbsp;<span style="color:#ff9f1c;">⭐ Orange = Recommended value-for-money choice.</span>
+      </p>
+    </div>
+
+    <div class="comparison-table-wrap comparison-header-wrap">
+      <div class="scan-line" aria-hidden="true"></div>
+      <table class="comparison-table" role="table" aria-label="ISP provider price comparison table">
+        <thead>
+          <tr id="comparison-thead-row">
+            <!-- Populated by JS -->
+          </tr>
+        </thead>
+        <tbody id="comparison-tbody">
+          <!-- Populated by JS -->
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="8" style="padding:0;">
+              <div class="table-footer-note">
+                <span class="gst-warning">⚠️ Above Base Prices + 18% GST Applicable as per Norms</span>
+                <a href="tel:9865396073" class="table-contact" style="color:var(--cyan);text-decoration:none;">📞 Call 9865396073 for Instant Setup &amp; Custom Bundles</a>
+              </div>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- Animated Section Divider -->
+<div class="section-divider" aria-hidden="true"></div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     FEATURES SECTION
+═══════════════════════════════════════════════════════════ -->
+<section id="features" aria-labelledby="features-heading">
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-label">✨ The Sakthi Advantage</span>
+      <h2 class="section-title" id="features-heading">
+        Engineered for <span class="neon-text-gold">Peak Performance</span>
+      </h2>
+      <p class="section-desc">Next-generation fiber architecture delivering rock-solid connectivity, zero throttling, and premier local support.</p>
+    </div>
+
+    <div class="features-grid" role="list">
+      <article class="feature-card glass" role="listitem" aria-label="Fiber speed feature">
+        <div class="feature-icon-box">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00f0ff" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        </div>
+        <h3 class="feature-title">Pure Fiber-to-the-Home (FTTH)</h3>
+        <p class="feature-desc">Dedicated fiber optic line directly to your living room. Symmetrical download &amp; upload with zero copper bottleneck.</p>
+      </article>
+
+      <article class="feature-card glass" role="listitem" aria-label="Gaming feature">
+        <div class="feature-icon-box">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"/></svg>
+        </div>
+        <h3 class="feature-title">Ultra-Low Gaming Latency</h3>
+        <p class="feature-desc">Custom routed gaming DNS paths direct to BGMI, Valorant, GTA V, and Call of Duty servers with &lt;4ms local ping.</p>
+      </article>
+
+      <article class="feature-card glass" role="listitem" aria-label="OTT bundles feature">
+        <div class="feature-icon-box">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        </div>
+        <h3 class="feature-title">Premium OTT Subscriptions</h3>
+        <p class="feature-desc">Enjoy Netflix 4K, Disney+ Hotstar, Amazon Prime, SonyLIV, and ZEE5 bundled directly at zero extra setup fees.</p>
+      </article>
+
+      <article class="feature-card glass" role="listitem" aria-label="24/7 support feature">
+        <div class="feature-icon-box">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+        </div>
+        <h3 class="feature-title">24/7 Instant Support</h3>
+        <p class="feature-desc">Direct engineer access via phone &amp; WhatsApp. Average on-field issue turnaround resolution within 2 hours.</p>
+      </article>
+
+      <article class="feature-card glass" role="listitem" aria-label="Free router feature">
+        <div class="feature-icon-box">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00f0ff" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/></svg>
+        </div>
+        <h3 class="feature-title">Free Gigabit Dual-Band Router</h3>
+        <p class="feature-desc">Complimentary high-gain Wi-Fi 6 router included with multi-month and annual subscriptions for 100% whole-home coverage.</p>
+      </article>
+
+      <article class="feature-card glass" role="listitem" aria-label="Multi-provider feature">
+        <div class="feature-icon-box">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
+        </div>
+        <h3 class="feature-title">Multi-ISP Aggregation</h3>
+        <p class="feature-desc">Access to 7 major ISP backbones — BSNL, TIC Fiber, RailWire, MEG NET, Kovai Fibernet, Fiber Flow, and GioTech.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     QUICK BOOKING / CONNECTION MODAL
+═══════════════════════════════════════════════════════════ -->
+<div class="modal-backdrop" id="booking-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal-dialog glass">
+    <button class="modal-close-btn" id="btn-modal-close" aria-label="Close dialog">✕</button>
+    <div class="modal-header">
+      <div class="modal-icon">⚡</div>
+      <h3 class="modal-title font-orbitron" id="modal-title">Get Connected to Sakthi Fiber</h3>
+      <p class="modal-subtitle">Fill in your details below for instant connection setup or WhatsApp activation.</p>
+    </div>
+
+    <form id="booking-form" class="modal-form">
+      <div class="form-group">
+        <label for="book-name" class="form-label">Full Name</label>
+        <input type="text" id="book-name" class="form-input" placeholder="e.g. Ramesh Kumar" required />
+      </div>
+
+      <div class="form-group">
+        <label for="book-phone" class="form-label">Mobile Number</label>
+        <input type="tel" id="book-phone" class="form-input" placeholder="e.g. 9865396073" pattern="[0-9]{10}" required />
+      </div>
+
+      <div class="form-group">
+        <label for="book-plan" class="form-label">Select Preferred Plan</label>
+        <select id="book-plan" class="form-select" required>
+          <option value="Starter Spark 50 Mbps - ₹449/mo">Starter Spark 50 Mbps (₹449/mo)</option>
+          <option value="Value Blaze 100 Mbps - ₹649/mo" selected>Value Blaze 100 Mbps (₹649/mo) — Best Value</option>
+          <option value="Gaming Titan 200 Mbps - ₹849/mo">Gaming Titan 200 Mbps (₹849/mo) — Low Ping</option>
+          <option value="Ultra Storm 300 Mbps - ₹1049/mo">Ultra Storm 300 Mbps (₹1049/mo) — Multi-Gig</option>
+          <option value="Custom Plan / Business Plan">Custom / Business Multi-Line Fiber</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="book-address" class="form-label">Area / Street / Location</label>
+        <input type="text" id="book-address" class="form-input" placeholder="e.g. Gandhipuram / Peelamedu / Tirupur" required />
+      </div>
+
+      <div class="modal-actions">
+        <button type="button" class="btn-whatsapp-action" id="btn-submit-whatsapp">
+          <span>💬 Book via WhatsApp</span>
+        </button>
+        <button type="submit" class="btn-call-action" id="btn-submit-call">
+          <span>📞 Instant Callback</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     FLOATING QUICK-ACTION DOCK
+═══════════════════════════════════════════════════════════ -->
+<div class="floating-quick-dock" role="complementary" aria-label="Quick contact dock">
+  <a href="https://wa.me/919865396073?text=Hi%20Sakthi%20Internet,%20I%20am%20interested%20in%20getting%20a%20new%20high-speed%20fiber%20connection!" target="_blank" rel="noopener noreferrer" class="dock-item dock-whatsapp" title="WhatsApp Us">
+    <span class="dock-icon">💬</span>
+    <span class="dock-label">WhatsApp</span>
+  </a>
+  <a href="tel:9865396073" class="dock-item dock-call" title="Call Direct">
+    <span class="dock-icon">📞</span>
+    <span class="dock-label">9865396073</span>
+  </a>
+  <a href="#speedtest-section" class="dock-item dock-test" title="Speed Test">
+    <span class="dock-icon">⚡</span>
+    <span class="dock-label">Test Speed</span>
+  </a>
+  <button class="dock-item dock-top" id="btn-scroll-top" title="Back to top" aria-label="Scroll to top">
+    <span class="dock-icon">▲</span>
+  </button>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════════════════ -->
+<footer id="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div>
+        <a href="#" class="logo-wrap" style="text-decoration:none;margin-bottom:16px;display:inline-flex;" aria-label="Sakthi Internet Service">
+          <div class="logo-icon-container" style="width:40px;height:40px;" aria-hidden="true">
+            <svg class="internet-logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="42" stroke="url(#logoGlowFooter)" stroke-width="2.5" stroke-dasharray="8 6"/>
+              <path d="M26 64 C 32 46, 68 46, 74 64" stroke="#00f0ff" stroke-width="4" stroke-linecap="round"/>
+              <path d="M34 68 C 39 55, 61 55, 66 68" stroke="#a855f7" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="50" cy="74" r="4" fill="#00f0ff"/>
+              <path d="M50 20 L50 48 M42 32 L50 20 L58 32" stroke="#00f0ff" stroke-width="3.5" stroke-linecap="round"/>
+              <defs>
+                <linearGradient id="logoGlowFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#00f0ff"/>
+                  <stop offset="100%" stop-color="#a855f7"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-name font-orbitron" style="font-size:1.05rem;">SAKTHI <span class="text-gradient-cyan">FIBER</span></span>
+            <span class="logo-tagline">High Speed Broadband ISP</span>
+          </div>
+        </a>
+        <p class="footer-desc">
+          Delivering symmetrical next-generation fiber broadband from 50 Mbps to 300 Mbps across Tamil Nadu with 99.98% uptime SLA. Data • Voice • OTT • IPTV.
+        </p>
+        <div class="footer-socials" aria-label="Social media links">
+          <a href="https://wa.me/919865396073" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="WhatsApp Direct" title="WhatsApp Us">💬</a>
+          <a href="https://chat.whatsapp.com/KBZXNwdCalNIsynzpx6zGF?s=sw&p=a&ilr=4" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Join WhatsApp Community" title="Join WhatsApp Group">👥</a>
+          <a href="https://www.instagram.com/saranya.__.64" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">📷</a>
+          <a href="tel:9865396073" class="social-btn" aria-label="Call Direct">📞</a>
+        </div>
+      </div>
+
+      <!-- Plans -->
+      <nav aria-label="Plans navigation">
+        <p class="footer-col-title">Plans &amp; Speeds</p>
+        <ul class="footer-links">
+          <li><a href="#plans-section">50 Mbps Starter Spark</a></li>
+          <li><a href="#plans-section">100 Mbps Value Blaze</a></li>
+          <li><a href="#plans-section">200 Mbps Gaming Titan</a></li>
+          <li><a href="#plans-section">300 Mbps Ultra Storm</a></li>
+          <li><a href="#comparison">Compare 7 Major ISPs</a></li>
+        </ul>
+      </nav>
+
+      <!-- Interactive Tools -->
+      <nav aria-label="Tools navigation">
+        <p class="footer-col-title">Diagnostic Tools</p>
+        <ul class="footer-links">
+          <li><a href="#speedtest-section">Live In-App Speed Test</a></li>
+          <li><a href="#calculator">Download Time Calculator</a></li>
+          <li><a href="#wizard">Smart Plan Matchmaker</a></li>
+          <li><a href="https://www.speedtest.net/" target="_blank" rel="noopener">Ookla Speedtest ↗</a></li>
+          <li><a href="#features">Network Advantages</a></li>
+        </ul>
+      </nav>
+
+      <!-- Contact -->
+      <address style="font-style:normal;">
+        <p class="footer-col-title">Official Contact</p>
+        <ul class="footer-links">
+          <li><a href="tel:9865396073">📞 9865396073</a></li>
+          <li><a href="mailto:saranya060408@gmail.com">✉️ saranya060408@gmail.com</a></li>
+          <li><a href="https://wa.me/919865396073">💬 WhatsApp Direct Support</a></li>
+          <li><a href="https://chat.whatsapp.com/KBZXNwdCalNIsynzpx6zGF?s=sw&p=a&ilr=4" target="_blank" rel="noopener noreferrer">👥 Join Customer Group</a></li>
+          <li><a href="https://www.instagram.com/saranya.__.64" target="_blank" rel="noopener noreferrer">📸 Instagram: @saranya.__.64</a></li>
+          <li><span style="color:var(--text-secondary);font-size:0.85rem;">📍 Fast Installation across Tamil Nadu</span></li>
+        </ul>
+      </address>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Sakthi Internet Service. Powered by High-Speed Fiber Technology.</p>
+      <p class="footer-gst">⚠️ Base prices are exclusive of 18% GST applicable as per Government regulations.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SCRIPTS
+═══════════════════════════════════════════════════════════ -->
+<script src="plans-data.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
